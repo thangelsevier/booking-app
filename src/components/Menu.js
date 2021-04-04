@@ -3,6 +3,7 @@ import { Route, Link } from "react-router-dom";
 import { Container } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
+import { NavDropdown } from 'react-bootstrap';
 
 import '../css/Menu.css';
 
@@ -21,10 +22,18 @@ const menus = [
         name : 'Contact',
         to : '/contact',
         exact : false
+    }
+];
+
+const userMenus = [
+    {
+        name : 'Log In',
+        to : '/login',
+        exact : false
     },
     {
-        name : 'Login',
-        to : '/login',
+        name : 'Sign Up',
+        to : '/signup',
         exact : false
     }
 ];
@@ -60,6 +69,9 @@ class Menu extends Component {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
                                 { this.showMenus(menus) }
+                                <NavDropdown title="Join Us" id="basic-nav-dropdown">
+                                    { this.showUserMenus(userMenus) }
+                                </NavDropdown>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
@@ -80,6 +92,21 @@ class Menu extends Component {
                         to={menu.to} 
                         activeOnlyWhenExact={menu.exact}
                     />
+                );
+            });
+        }
+
+        return result;
+    }
+
+    showUserMenus = (userMenus) => {
+        var result = null;
+
+        if (userMenus.length > 0) {
+            result = userMenus.map((menu, index) => {
+                return (
+                    <NavDropdown.Item href={menu.to} className="my-dropdown">{menu.name} 
+                    </NavDropdown.Item>
                 );
             });
         }

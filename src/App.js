@@ -1,8 +1,8 @@
 import './App.css';
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from './components/Menu';
-import routes from './routes';
+import routes from './helpers/routes';
 
 class App extends Component {
   render() {

@@ -6,3 +6,23 @@
   min-height: 50px;
   font-weight: 500;
 }
+
+#basic-nav-dropdown {
+  font-size: 1em;
+  min-width: 200px;
+}
+
+a.my-link.nav-link {
+  font-size: 1em;
+  min-width: 200px;
+}
+
+a.my-link.nav-link.active {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  font-size: 1.25em;
+  font-weight: 600;
+}
