@@ -1,8 +1,8 @@
-.NavBar {
+.Menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 50px;
-  font-weight: 700;
+  font-weight: 500;
 }
