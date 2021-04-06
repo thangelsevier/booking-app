@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Prompt } from 'react-router-dom';
 
+import { Table } from 'react-bootstrap';
+
+import '../css/Contact.css';
+
 class Contact extends Component {
     constructor(props) {
         super(props);
@@ -21,6 +25,11 @@ class Contact extends Component {
                     when={isChecked}
                     message={ (location) => (`Ban chac chan muon di den ${location.pathname}`) }
                 />
+                <Table striped bordered hover variant="dark">
+                <thead>
+                  <tr></tr>
+                </thead>
+              </Table>
             </div>
         );
     }

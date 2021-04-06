@@ -23,6 +23,6 @@ a.my-link.nav-link.active {
 }
 
 .nav-link:hover {
-  font-size: 1.25em;
+  font-size: 1.25em !important;
   font-weight: 600;
 }

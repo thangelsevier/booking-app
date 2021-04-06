@@ -1,0 +1,30 @@
+.img-bg {
+  text-align: center;
+  /* The image used */
+  background-image: url(../img/sushi_bar_1.jpeg);
+  height: 600px; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+}
+
+.contact-span {
+  color: whitesmoke;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+}

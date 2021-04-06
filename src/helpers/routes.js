@@ -4,6 +4,7 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Login from '../components/Login';
 import SignUp from '../components/SignUp';
+import Booking from '../components/Booking';
 
 const routes = [
     {
@@ -15,6 +16,11 @@ const routes = [
         path : '/about',
         exact : false,
         main : () => <About />
+    },
+    {
+        path : '/booking',
+        exact : false,
+        main : () => <Booking />
     },
     {
         path : '/contact',

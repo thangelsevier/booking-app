@@ -1,23 +1,18 @@
 .App {
   text-align: center;
   /* The image used */
-  background-image: url(./img/sushi_home.jpg);
+  background-image: url(./img/sushi_wall.jpeg);
   min-height: 800px; 
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 100px;
 }
 
 .description-content {
   color: white;
   font-weight: 700;
-}
-
-.App button {
-  margin-top: 15px;
 }
 
 @keyframes App-logo-spin {

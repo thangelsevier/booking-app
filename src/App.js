@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from './components/Menu';
 import routes from './helpers/routes';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fas)
 
 class App extends Component {
   render() {
@@ -11,7 +15,7 @@ class App extends Component {
             <div className="App">
                 {/* Menu */}
                 <Menu />
-                {/* Noi Dung */}
+                {/* Content display of Menu selected */}
                 <Switch>
                     { this.showContentMenu(routes) }
                 </Switch>

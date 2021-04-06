@@ -3,7 +3,8 @@ import { Route, Link } from "react-router-dom";
 import { Container } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
-import { NavDropdown } from 'react-bootstrap';
+import { NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import '../css/Menu.css';
 
@@ -11,17 +12,26 @@ const menus = [
     {
         name : 'Home',
         to : '/',
-        exact : true
+        exact : true,
+        icon : 'home'
+    },
+    {
+        name : 'Booking',
+        to : '/booking',
+        exact : true,
+        icon : 'cart-plus'
     },
     {
         name : 'About us',
         to : '/about',
-        exact : false
+        exact : false,
+        icon : 'info'
     },
     {
         name : 'Contact',
         to : '/contact',
-        exact : false
+        exact : false,
+        icon : 'address-book'
     }
 ];
 
@@ -29,12 +39,14 @@ const userMenus = [
     {
         name : 'Log In',
         to : '/login',
-        exact : false
+        exact : false,
+        icon : 'sign-in-alt'
     },
     {
         name : 'Sign Up',
         to : '/signup',
-        exact : false
+        exact : false,
+        icon : 'user-plus'
     }
 ];
 
@@ -42,7 +54,8 @@ const userMenus = [
 const MenuLink = ({
     label,
     to,
-    activeOnlyWhenExact
+    activeOnlyWhenExact,
+    iconLabel
 }) => {
     return (
         <Route 
@@ -52,7 +65,8 @@ const MenuLink = ({
                 var active = match ? 'active' : '';
 
                 return (
-                    <Nav.Link active={active} href={to} className="my-link">{label}
+                    <Nav.Link active={active} href={to} className="my-link">
+                        <FontAwesomeIcon icon={iconLabel}/> {label}
                     </Nav.Link>
                 );
             }}
@@ -69,11 +83,15 @@ class Menu extends Component {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
                                 { this.showMenus(menus) }
-                                <NavDropdown title="Join Us" id="basic-nav-dropdown">
+                                <NavDropdown title="Join us" id="basic-nav-dropdown">
                                     { this.showUserMenus(userMenus) }
                                 </NavDropdown>
                             </Nav>
                         </Navbar.Collapse>
+                        <Form inline>
+                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                        <Button variant="outline-success">Search</Button>
+                    </Form>
                     </Navbar>
                 </Container>
             </div>
@@ -91,6 +109,7 @@ class Menu extends Component {
                         label={menu.name} 
                         to={menu.to} 
                         activeOnlyWhenExact={menu.exact}
+                        iconLabel={menu.icon}
                     />
                 );
             });
@@ -105,7 +124,8 @@ class Menu extends Component {
         if (userMenus.length > 0) {
             result = userMenus.map((menu, index) => {
                 return (
-                    <NavDropdown.Item href={menu.to} className="my-dropdown">{menu.name} 
+                    <NavDropdown.Item href={menu.to} className="my-dropdown">
+                        <FontAwesomeIcon icon={menu.icon}/> {menu.name} 
                     </NavDropdown.Item>
                 );
             });
