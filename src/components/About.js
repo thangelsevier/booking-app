@@ -1,15 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Component } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { Jumbotron } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 
 import '../css/About.css';
 
-function About() {
+class About extends Component {
+
+  render() {
     return (
       <div className="About">
         <Container fluid className="bg-dark">
-            <div className= "img-bg"></div>
+            <div className= "about-img-bg"></div>
             <Jumbotron fluid className="bg-dark">
               <h1>Sushi Booking</h1>
               <span className="contact-span">
@@ -25,6 +28,7 @@ function About() {
         </Container>
       </div>
     );
+  }
 }
 
 export default About;
