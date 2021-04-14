@@ -1,0 +1,13 @@
+.itemCard {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+img.itemImage {
+  height: 200px;
+  width: 100%;
+}
+
+img.itemImage:hover {
+  border: 2px solid green;
+}

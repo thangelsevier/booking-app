@@ -5,6 +5,7 @@
   width: 100%;
   min-height: 50px;
   font-weight: 500;
+  z-index: 900;
 }
 
 #basic-nav-dropdown {
