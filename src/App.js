@@ -5,22 +5,25 @@ import Menu from './components/Menu';
 import routes from './helpers/routes';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import CartContextProvider from './contexts/CartContextProvider';
 
 library.add(fas)
 
 class App extends Component {
   render() {
     return (
-        <Router>
-            <div className="App">
-                {/* Menu */}
-                <Menu />
-                {/* Content display of Menu selected */}
-                <Switch>
-                    { this.showContentMenu(routes) }
-                </Switch>
-            </div>
-        </Router>
+        <CartContextProvider>
+            <Router>
+                <div className="App">
+                    {/* Menu */}
+                    <Menu />
+                    {/* Content display of Menu selected */}
+                    <Switch>
+                        { this.showContentMenu(routes) }
+                    </Switch>
+                </div>
+            </Router>
+        </CartContextProvider>
     );
   }
 

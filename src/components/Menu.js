@@ -124,7 +124,7 @@ class Menu extends Component {
         if (userMenus.length > 0) {
             result = userMenus.map((menu, index) => {
                 return (
-                    <NavDropdown.Item href={menu.to} className="my-dropdown">
+                    <NavDropdown.Item key={index} href={menu.to} className="my-dropdown">
                         <FontAwesomeIcon icon={menu.icon}/> {menu.name} 
                     </NavDropdown.Item>
                 );

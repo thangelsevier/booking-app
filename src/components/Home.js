@@ -14,7 +14,7 @@ class Home extends Component {
                     <h1>Sushi Booking</h1>
                     <span>You are stucking on a busy day but still wanna enjoy sashimi? <br/>
                     Sushi Booking here with convenient delivery services, keep the highest quality of each slides!</span><br/><br/>
-                    <Button variant="danger"><span><b><a href="/contact"><FontAwesomeIcon icon="cart-plus"/> Booking Now</a></b></span></Button> 
+                    <Button variant="danger"><span><b><a href="/booking"><FontAwesomeIcon icon="cart-plus"/> Booking Now</a></b></span></Button> 
                 </Container>
             </div>
         );

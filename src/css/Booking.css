@@ -3,10 +3,16 @@
 }
 
 .booking-content {
-  min-height: 600px;
+  min-height: 400px;
   z-index: 100;
+  padding-top: 30px;
+ 
 }
 
 .itemSquare {
   margin: 10px;
+}
+
+.actionBar {
+  padding-bottom: 30px;
 }

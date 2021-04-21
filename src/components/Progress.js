@@ -35,7 +35,6 @@ class Progress extends Component {
 
     showSteps = (steps) => {
         var result = null;
-
         result = steps.map((step, index) => {
             let active = "";
             if (step.key <= this.props.stage) {
