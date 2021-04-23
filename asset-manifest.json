@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "/booking-app/static/css/main.1ff274be.chunk.css",
-    "main.js": "/booking-app/static/js/main.8848bd78.chunk.js",
-    "main.js.map": "/booking-app/static/js/main.8848bd78.chunk.js.map",
-    "runtime-main.js": "/booking-app/static/js/runtime-main.1b2b5cdc.js",
-    "runtime-main.js.map": "/booking-app/static/js/runtime-main.1b2b5cdc.js.map",
+    "main.js": "/booking-app/static/js/main.c4299a2b.chunk.js",
+    "main.js.map": "/booking-app/static/js/main.c4299a2b.chunk.js.map",
+    "runtime-main.js": "/booking-app/static/js/runtime-main.8317b30d.js",
+    "runtime-main.js.map": "/booking-app/static/js/runtime-main.8317b30d.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/booking-app/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.21062c9c.chunk.js": "/booking-app/static/js/2.21062c9c.chunk.js",
-    "static/js/2.21062c9c.chunk.js.map": "/booking-app/static/js/2.21062c9c.chunk.js.map",
-    "static/js/3.9b20690c.chunk.js": "/booking-app/static/js/3.9b20690c.chunk.js",
-    "static/js/3.9b20690c.chunk.js.map": "/booking-app/static/js/3.9b20690c.chunk.js.map",
+    "static/js/2.aff85103.chunk.js": "/booking-app/static/js/2.aff85103.chunk.js",
+    "static/js/2.aff85103.chunk.js.map": "/booking-app/static/js/2.aff85103.chunk.js.map",
+    "static/js/3.23d254c6.chunk.js": "/booking-app/static/js/3.23d254c6.chunk.js",
+    "static/js/3.23d254c6.chunk.js.map": "/booking-app/static/js/3.23d254c6.chunk.js.map",
     "index.html": "/booking-app/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/booking-app/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.1ff274be.chunk.css.map": "/booking-app/static/css/main.1ff274be.chunk.css.map",
-    "static/js/2.21062c9c.chunk.js.LICENSE.txt": "/booking-app/static/js/2.21062c9c.chunk.js.LICENSE.txt",
+    "static/js/2.aff85103.chunk.js.LICENSE.txt": "/booking-app/static/js/2.aff85103.chunk.js.LICENSE.txt",
     "static/media/Contact.css": "/booking-app/static/media/sushi_map.5b2a3e92.jpg",
     "static/media/About.css": "/booking-app/static/media/sushi_bar_1.8d436e04.jpeg",
     "static/media/App.css": "/booking-app/static/media/sushi_wall.0999e9f3.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1b2b5cdc.js",
+    "static/js/runtime-main.8317b30d.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.21062c9c.chunk.js",
+    "static/js/2.aff85103.chunk.js",
     "static/css/main.1ff274be.chunk.css",
-    "static/js/main.8848bd78.chunk.js"
+    "static/js/main.c4299a2b.chunk.js"
   ]
 }
