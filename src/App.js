@@ -1,6 +1,6 @@
 import './App.css';
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from './components/Menu';
 import routes from './helpers/routes';
 import { library } from '@fortawesome/fontawesome-svg-core'
