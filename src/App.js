@@ -1,6 +1,6 @@
 import './App.css';
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Menu from './components/Menu';
 import routes from './helpers/routes';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
         <CartContextProvider>
-            <Router>
+            <HashRouter basename='/'>
                 <div className="App">
                     {/* Menu */}
                     <Menu />
@@ -22,7 +22,7 @@ class App extends Component {
                         { this.showContentMenu(routes) }
                     </Switch>
                 </div>
-            </Router>
+            </HashRouter>
         </CartContextProvider>
     );
   }
