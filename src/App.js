@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
         <CartContextProvider>
-            <HashRouter basename='/'>
+            <HashRouter>
                 <div className="App">
                     {/* Menu */}
                     <Menu />
