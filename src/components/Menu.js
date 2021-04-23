@@ -65,7 +65,7 @@ const MenuLink = ({
                 var active = match ? 'active' : '';
 
                 return (
-                    <Nav.Link active={active} href={to} className="my-link">
+                    <Nav.Link as={Link} active={active} to={to} className="my-link">
                         <FontAwesomeIcon icon={iconLabel}/> {label}
                     </Nav.Link>
                 );
